@@ -1,0 +1,82 @@
+* {
+margin: 0;
+padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #90EE90;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes title{
+   0%{ translate: 0 0;}
+  100%{  translate: 100px 0;} 
+
+}
+.header{
+    background-color: white;
+    border-radius: 20px;
+   box-shadow: 0 0 10px ;
+   position: absolute; 
+   top: 50%; left: 50%; 
+   transform: translate(-50%, -50%); 
+   height:99%;
+   width: 90%;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.container h2{color: #FF6347;}
+.container{
+    display: grid;
+    grid-template-rows: repeat(4,55px);
+    grid-template-columns: repeat(6,95.75px);
+    gap: 100px; 
+   
+    grid-template-areas: 
+               " i1 i1 i1 i4 i4 i4  "
+               " i1 i1 i1 i4 i4 i4 "
+               " i3 i3 i5 i5  i2 i6"
+               " i3 i3 i5 i5  i2 i6"
+              }
+.item1{
+grid-area: i1; }
+.item3{ grid-area: i3;}
+.item2{grid-area: i2;}
+.item4{ grid-area: i4; }
+
+
+img{
+    height:200px;
+    width: 300px;
+    padding: 1px;}
+    .navbar h1 {
+        color: #e6a5af;
+        position: relative;
+        animation-name: title;
+        animation-duration: 4s;
+        animation-delay: 2s;
+      } 
+        @keyframes title {
+        0%   { left:0px; top:0px;}
+  100%  { left:200px; top:0px;}
+    }
+    
